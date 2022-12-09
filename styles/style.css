@@ -1,0 +1,86 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    transition: 0.5s;
+}
+
+.cell:hover, .on{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.cell:nth-child(1){
+    background-color: #f368e0;
+}
+
+.cell:nth-child(1):active{
+    background-color: #ff9ff3;
+    transition: .25s;
+}
+
+.cell:nth-child(2){
+    background-color: #ff9f43;
+}
+
+.cell:nth-child(2):active{
+    background-color: #feca57;
+    transition: .25s;
+}
+.cell:nth-child(3){
+    background-color: #0abde3;
+}
+
+.cell:nth-child(3):active{
+    background-color: #48dbfb;
+    transition: .25s;
+}
+.cell:nth-child(4){
+    background-color: #10ac84;
+}
+
+.cell:nth-child(4):active{
+    background-color: #1dd1a1;
+    transition: .25s;
+}
+
+button{
+    background: #222f3e;
+    color: #fff;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #576574;
+}
